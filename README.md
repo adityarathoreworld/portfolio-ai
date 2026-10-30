@@ -33,6 +33,18 @@ Expensive models are still useful for ambiguous architecture, security reviews, 
 
 **Time saved:** fewer full redesign loops. **Cost saved:** Composer 2.5 sessions instead of defaulting to top-tier models for every pixel tweak.
 
+### Composer 2.5 pricing (Cursor)
+
+Rates used when estimating this workflow (check [Cursor pricing](https://cursor.com/pricing) for current numbers):
+
+| Meter | Price |
+| ----- | ----- |
+| Input tokens | **$0.50** / million |
+| Cache-read tokens | **$0.20** / million |
+| Output tokens | **$2.50** / million |
+
+Output is priced higher than input, so **skills and rules pay off twice**: they cut bad iterations (less output) and improve cache hits on repeated skill/rule context (cheaper cache-read vs fresh input). A tight brief + UI Design Brain → fewer megabytes of “try again” CSS from the model.
+
 ### What I use in Cursor
 
 #### 1. **UI Design Brain** (Agent Skill)
@@ -106,6 +118,7 @@ No React, no Tailwind build—on purpose. Cheaper to host, faster to iterate wit
 
 ### Cost mindset (practical)
 
+- **Composer 2.5** at the rates above is a good default for multi-file UI work; frontier models are reserved for high-uncertainty tasks.
 - **One long frontier session** on a portfolio can cost more than **several Composer 2.5 passes** with a skill-loaded brief.
 - Skills amortize: you write the standard once; every UI task reuses it.
 - Rules prevent expensive mistakes (wrong repo docs, wrong stack, scope creep).
