@@ -60,6 +60,20 @@ Skills and rules don't eliminate model limitations, but they help reduce avoidab
 
 No React, Tailwind build pipeline or unnecessary dependencies.
 
+### Why Vanilla HTML, CSS & JavaScript?
+
+This portfolio could have been built with React or another modern frontend framework. However, the goal was to keep deployment simple, lightweight and cost-efficient.
+
+I deliberately chose **HTML, CSS and vanilla JavaScript** because:
+
+- GitHub Pages can serve the project directly without a build process.
+- No framework runtime or unnecessary dependencies.
+- Faster deployment and simpler maintenance.
+- Lightweight assets and minimal hosting requirements.
+- Native browser capabilities are sufficient for the required interactions.
+
+**The objective isn't to use the most sophisticated stack. It's to choose the simplest architecture that gets the job done.**
+
 ## Project Structure
 
 ```text
