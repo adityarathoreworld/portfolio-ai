@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aditya Rathore — Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Full stack developer. Laravel, React, AI in production. Based in Agra, India."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="app-bar">
+      <div class="shell app-bar__inner">
+        <div class="app-bar__brand">
+          <a class="brand-link" href="#top">Aditya Rathore</a>
+          <span class="badge badge--success" title="Open to full-time employment">Available</span>
+        </div>
+        <nav class="app-bar__nav" aria-label="Sections">
+          <a href="#overview" data-section-link>Overview</a>
+          <a href="#impact" data-section-link>Impact</a>
+          <a href="#capabilities" data-section-link>Capabilities</a>
+          <a href="#projects" data-section-link>Projects</a>
+          <a href="#timeline" data-section-link>Timeline</a>
+        </nav>
+        <a class="btn btn--primary btn--sm app-bar__cta" href="#contact">Contact</a>
+        <button
+          type="button"
+          class="icon-btn app-bar__menu"
+          aria-expanded="false"
+          aria-controls="mobile-sheet"
+          data-menu-open
+          aria-label="Open navigation"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M4 7h16v2H4V7zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <dialog class="sheet" id="mobile-sheet" aria-label="Navigation">
+      <div class="sheet__head">
+        <span class="sheet__title">Navigate</span>
+        <button type="button" class="icon-btn" data-menu-close aria-label="Close navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12 19 6.4 17.6 5 12 10.6 6.4 5z"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav class="sheet__nav">
+        <a href="#overview" data-section-link data-menu-close>Overview</a>
+        <a href="#impact" data-section-link data-menu-close>Impact</a>
+        <a href="#capabilities" data-section-link data-menu-close>Capabilities</a>
+        <a href="#projects" data-section-link data-menu-close>Projects</a>
+        <a href="#timeline" data-section-link data-menu-close>Timeline</a>
+        <a href="#contact" data-section-link data-menu-close>Contact</a>
+      </nav>
+    </dialog>
+
+    <div class="layout" id="top">
+      <aside class="rail" aria-label="Profile summary">
+        <figure class="rail__avatar">
+          <img
+            src="https://adityarathoreworld.in/portrait.png"
+            alt="Aditya Rathore"
+            width="200"
+            height="200"
+          />
+        </figure>
+        <p class="rail__role">Full stack developer</p>
+        <p class="rail__meta">Agra, India · Laravel · React · AI</p>
+        <dl class="rail__facts">
+          <div>
+            <dt>Email</dt>
+            <dd>
+              <a href="mailto:aditya@adityarathoreworld.in" class="mono truncate" title="aditya@adityarathoreworld.in"
+                >aditya@adityarathoreworld.in</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+918766346052" class="mono tabular">+91 87663 46052</a></dd>
+          </div>
+          <div>
+            <dt>Experience</dt>
+            <dd class="tabular">2015 — present</dd>
+          </div>
+        </dl>
+        <button type="button" class="btn btn--secondary btn--block" data-copy-email>
+          Copy email
+        </button>
+        <p class="rail__toast" role="status" aria-live="polite" hidden data-toast></p>
+      </aside>
+
+      <main id="main" class="workspace">
+        <section class="panel panel--hero reveal" id="overview" aria-labelledby="overview-title">
+          <p class="kicker">Hiring portfolio</p>
+          <h1 id="overview-title" class="display text-balance">
+            API, interface, and AI integration—one engineer, production-ready from month one.
+          </h1>
+          <p class="lede text-pretty">
+            I ship Laravel backends, Livewire or React front ends, and production AI (OpenAI,
+            Ollama, RAG, n8n). I also own performance, Redis, deploys, backups, and uptime for
+            portals, commerce, LMS, and clinic software used every day.
+          </p>
+          <p class="lede lede--muted text-pretty">
+            Send a role—I’ll reply with a shipped feature, an integration path, and a real incident
+            we resolved. That’s usually enough for a hiring manager to decide.
+          </p>
+        </section>
+
+        <section class="panel reveal" id="impact" aria-labelledby="impact-title">
+          <header class="panel__head">
+            <div>
+              <h2 id="impact-title" class="panel__title">Impact</h2>
+              <p class="panel__sub">Verified outcomes from live systems.</p>
+            </div>
+          </header>
+          <div class="metric-row" role="list">
+            <article class="metric" role="listitem">
+              <p class="metric__label">Production performance</p>
+              <p class="metric__value tabular">~40%</p>
+              <p class="metric__ctx">Faster after cache & query work · Zontaa</p>
+            </article>
+            <article class="metric" role="listitem">
+              <p class="metric__label">Job-fair platform</p>
+              <p class="metric__value tabular">1,500+</p>
+              <p class="metric__ctx">Employers · Tirupur portal</p>
+            </article>
+            <article class="metric" role="listitem">
+              <p class="metric__label">Store migration</p>
+              <p class="metric__value tabular">62 → 90+</p>
+              <p class="metric__ctx">PageSpeed · TLG · low downtime</p>
+            </article>
+            <article class="metric" role="listitem">
+              <p class="metric__label">Hosting & ops</p>
+              <p class="metric__value tabular">100+</p>
+              <p class="metric__ctx">Sites monitored since 2015</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel reveal" id="capabilities" aria-labelledby="cap-title">
+          <header class="panel__head">
+            <div>
+              <h2 id="cap-title" class="panel__title">Capabilities</h2>
+              <p class="panel__sub">Stack and practices used on live traffic.</p>
+            </div>
+          </header>
+          <div class="tablist" role="tablist" aria-label="Capability areas">
+            <button
+              type="button"
+              role="tab"
+              id="tab-build"
+              aria-selected="true"
+              aria-controls="panel-build"
+              data-tab="build"
+            >
+              Build
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-ai"
+              aria-selected="false"
+              aria-controls="panel-ai"
+              tabindex="-1"
+              data-tab="ai"
+            >
+              AI
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-run"
+              aria-selected="false"
+              aria-controls="panel-run"
+              tabindex="-1"
+              data-tab="run"
+            >
+              Run
+            </button>
+          </div>
+          <div
+            class="tab-panel"
+            role="tabpanel"
+            id="panel-build"
+            aria-labelledby="tab-build"
+            data-tab-panel="build"
+          >
+            <ul class="chip-list">
+              <li><span class="mono">Laravel 8–13</span></li>
+              <li><span class="mono">PHP</span></li>
+              <li><span class="mono">Node / Express</span></li>
+              <li><span class="mono">Livewire</span></li>
+              <li><span class="mono">React</span></li>
+              <li><span class="mono">Vue</span></li>
+              <li><span class="mono">Tailwind</span></li>
+              <li><span class="mono">REST · Queues</span></li>
+            </ul>
+          </div>
+          <div
+            class="tab-panel"
+            role="tabpanel"
+            id="panel-ai"
+            aria-labelledby="tab-ai"
+            hidden
+            data-tab-panel="ai"
+          >
+            <ul class="chip-list">
+              <li><span class="mono">OpenAI</span></li>
+              <li><span class="mono">Ollama</span></li>
+              <li><span class="mono">RAG / FAISS</span></li>
+              <li><span class="mono">Tool calling</span></li>
+              <li><span class="mono">n8n</span></li>
+              <li><span class="mono">Whisper</span></li>
+            </ul>
+          </div>
+          <div
+            class="tab-panel"
+            role="tabpanel"
+            id="panel-run"
+            aria-labelledby="tab-run"
+            hidden
+            data-tab-panel="run"
+          >
+            <ul class="chip-list">
+              <li><span class="mono">MySQL · Postgres · Redis</span></li>
+              <li><span class="mono">Docker · Linux</span></li>
+              <li><span class="mono">NGINX · LiteSpeed</span></li>
+              <li><span class="mono">CDN · S3 · CI/CD</span></li>
+              <li><span class="mono">WAF · Load balancing</span></li>
+            </ul>
+            <p class="panel__note">
+              N+1 elimination, idempotent jobs, rate limits, backups that restore, Core Web Vitals,
+              SEO. Operator for A2z Cloud Hosting; contributor to TLG Gaming.
+            </p>
+          </div>
+        </section>
+
+        <section class="panel reveal" id="projects" aria-labelledby="projects-title">
+          <header class="panel__head panel__head--toolbar">
+            <div>
+              <h2 id="projects-title" class="panel__title">Projects</h2>
+              <p class="panel__sub">
+                <span data-project-count>5</span> selected · filter or sort below
+              </p>
+            </div>
+            <div class="toolbar">
+              <label class="field">
+                <span class="field__label">Search</span>
+                <input
+                  type="search"
+                  class="input"
+                  placeholder="Filter projects…"
+                  autocomplete="off"
+                  data-project-search
+                  aria-controls="project-table"
+                />
+              </label>
+            </div>
+          </header>
+          <div class="table-scroll" data-scroll-table tabindex="0" aria-label="Projects table, scroll horizontally on small screens">
+            <table class="table" id="project-table" data-project-table>
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <button type="button" class="th-sort" data-sort="name">
+                      Project <span class="th-sort__icon" aria-hidden="true"></span>
+                    </button>
+                  </th>
+                  <th scope="col">Delivery notes</th>
+                  <th scope="col" class="col-tag">Focus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-name="AI WordPress assistant">
+                  <td>AI WordPress assistant</td>
+                  <td>Laravel · Ollama · FAISS — grounded answers; fewer support tickets</td>
+                  <td><span class="badge badge--neutral">AI</span></td>
+                </tr>
+                <tr data-name="TLG Gaming Laravel 13">
+                  <td>TLG Gaming · Laravel 13</td>
+                  <td>OpenCart exit, embedding search, PC builder, Redis, CDN</td>
+                  <td><span class="badge badge--neutral">Commerce</span></td>
+                </tr>
+                <tr data-name="Lingua Learn">
+                  <td>Lingua Learn</td>
+                  <td>LMS — homework, attendance, live chat</td>
+                  <td><span class="badge badge--neutral">EdTech</span></td>
+                </tr>
+                <tr data-name="Multi-currency billing">
+                  <td>Multi-currency billing</td>
+                  <td>Subscriptions, GST-compliant invoices</td>
+                  <td><span class="badge badge--neutral">SaaS</span></td>
+                </tr>
+                <tr data-name="Aanyasri VShipIt InfactPro CMS">
+                  <td>Aanyasri · VShipIt · InfactPro · CMS</td>
+                  <td>FIFO warehouse, cross-border commerce, enterprise LMS, legal/clinic systems</td>
+                  <td><span class="badge badge--neutral">Enterprise</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="scroll-hint" data-scroll-hint hidden>Swipe horizontally to read full table →</p>
+          <p class="panel__note" data-empty-projects hidden>
+            No projects match your search. Clear the filter to see all entries.
+          </p>
+          <p class="panel__note">
+            In progress: White Label Devs, Advocate Register, Clinic Essential (WhatsApp-first
+            clinics).
+          </p>
+        </section>
+
+        <section class="panel reveal" id="timeline" aria-labelledby="timeline-title">
+          <header class="panel__head">
+            <div>
+              <h2 id="timeline-title" class="panel__title">Timeline</h2>
+              <p class="panel__sub">Roles and scope, 2015 — today.</p>
+            </div>
+          </header>
+          <div class="table-scroll" data-scroll-table tabindex="0" aria-label="Timeline table, scroll horizontally on small screens">
+            <table class="table table--timeline">
+              <thead>
+                <tr>
+                  <th scope="col" class="col-date">Period</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">Highlights</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tabular col-date">2026 — now</td>
+                  <td>Full Stack Developer · Vidyadhar Global AI Innovations</td>
+                  <td>OpenAI/Ollama/RAG, n8n, Laravel, performance (hybrid)</td>
+                </tr>
+                <tr>
+                  <td class="tabular col-date">2024 — now</td>
+                  <td>Laravel Developer · Zontaa Inc., Dallas</td>
+                  <td>~40% perf gain, infra, backups; CreditMaster.ai, Goat Tapper</td>
+                </tr>
+                <tr>
+                  <td class="tabular col-date">2023 — 2024</td>
+                  <td>Web Developer · Blattner Technologies</td>
+                  <td>WordPress recovery, Laravel tuning</td>
+                </tr>
+                <tr>
+                  <td class="tabular col-date">2021 — 2023</td>
+                  <td>Laravel Developer · Vrishbha Visuals</td>
+                  <td>Tirupur job portal, FIFO warehouse, LMS</td>
+                </tr>
+                <tr>
+                  <td class="tabular col-date">2018 — now</td>
+                  <td>Ecommerce Developer · TLG Gaming India</td>
+                  <td>Laravel rebuild, AI search, Core Web Vitals</td>
+                </tr>
+                <tr>
+                  <td class="tabular col-date">2015 — now</td>
+                  <td>Web Developer · A2Z Cloud Hosting</td>
+                  <td>Hosting, DR, migrations for 100+ sites</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="scroll-hint" data-scroll-hint hidden>Swipe horizontally to read full table →</p>
+          <p class="panel__note">
+            <strong class="text-foreground">Education:</strong> B.Tech Mechanical Engineering,
+            Manav Rachna (2017) · Network Security Workshop, IIT Delhi / Cisco.
+          </p>
+        </section>
+
+        <section class="panel panel--contact reveal" id="contact" aria-labelledby="contact-title">
+          <header class="panel__head">
+            <div>
+              <h2 id="contact-title" class="panel__title">Contact</h2>
+              <p class="panel__sub">Full-time · remote or hybrid.</p>
+            </div>
+          </header>
+          <div class="contact-actions">
+            <a class="btn btn--primary" href="mailto:aditya@adityarathoreworld.in?subject=Role%20inquiry"
+              >Email about a role</a
+            >
+            <a class="btn btn--ghost" href="mailto:adityarathore2011@gmail.com">Alternate email</a>
+          </div>
+        </section>
+
+        <footer class="workspace-foot">
+          <p>© <span id="y"></span> Aditya Rathore</p>
+        </footer>
+      </main>
+    </div>
+
+    <nav class="mobile-dock" aria-label="Quick actions">
+      <button
+        type="button"
+        class="mobile-dock__item"
+        data-menu-open
+        aria-expanded="false"
+        aria-controls="mobile-sheet"
+        aria-label="Open navigation"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M4 7h16v2H4V7zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" />
+        </svg>
+        <span>Menu</span>
+      </button>
+      <a class="mobile-dock__item" href="#projects">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M4 6h16v2H4V6zm0 5h10v2H4v-2zm0 5h16v2H4v-2z" />
+        </svg>
+        <span>Work</span>
+      </a>
+      <a class="mobile-dock__item mobile-dock__item--primary" href="mailto:aditya@adityarathoreworld.in">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            fill="currentColor"
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+          />
+        </svg>
+        <span>Email</span>
+      </a>
+    </nav>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
