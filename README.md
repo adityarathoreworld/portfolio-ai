@@ -1,5 +1,7 @@
 # Aditya Rathore — Portfolio (static)
 
+**Live preview:** [adityarathoreworld.github.io/portfolio-ai](https://adityarathoreworld.github.io/portfolio-ai/)
+
 Live-style hiring portfolio: **HTML + CSS + vanilla JS** only (no build step). Deploy from the repo root on GitHub Pages or any static host.
 
 **Site content:** [adityarathoreworld.in](https://adityarathoreworld.in/) (same story, this repo is the redesigned UI).
